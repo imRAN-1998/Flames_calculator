@@ -1,0 +1,93 @@
+		body{
+			margin:0;
+			padding:0;
+			background:#001a1a;
+			font-family:Arial,Helvetica,sans-serif;
+
+		}
+		@keyframes exp{
+			from {opacity:1;top:5%;}
+			to {opacity:0;top:20%;}
+		}
+		.container{
+			background:black;
+			position:absolute;
+			left:50%;
+			top:50%;
+			border:1px solid black;
+			width:300px;
+			height:370px;
+			transform:translate(-50%,-50%);
+		}
+		.error{
+			display:none;
+			text-align:center;
+			padding: 10px;
+			box-sizing: border-box;
+			position:absolute;
+			top:5%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			width:300px;
+			margin:auto;
+			color:white;
+			background:red;
+		}
+		.myform input[type="text"]{
+			background: black;
+			color:white;
+			display:block;
+			outline:none;
+			padding:15px;
+			box-sizing:border-box;
+			text-align: center;
+			margin:auto;
+			width:70%;
+			outline:none;
+			border-color:blue;
+			border-style:solid;
+			border-radius:25px;
+		}
+		.myform input[type="text"]:focus{
+			width:90%;
+			transition:0.5s;
+			border-color: green;
+			border-style:solid;	
+			outline:none;
+		}
+		.myform input[type="submit"]{
+			display:block;
+			outline:none;
+			margin:auto;
+			padding:10px;
+			border-radius:15px;
+			border-style:solid;
+			border-color:green;
+			background:black;
+			color:white;
+		}
+		.myform input[type="submit"]:hover{
+			background: green;
+			color:black;
+		}
+		.output{
+			margin-top:20px;
+			/*border:1px solid red;*/
+			width:100%;
+			height:100px;
+			text-align:center;
+		}
+		.output h1{
+			font-size: 25px;
+			font-weight:400;
+			color:white;
+			margin:0;
+		}
+		.inner-output{
+			display:none;
+			color:white;
+		}
+		.output .span1{
+			color:rgb(222,180,213);
+			font-size:20px;
+		}
